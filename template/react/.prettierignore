@@ -1,0 +1,6 @@
+.DS_Store
+node_module
+.gitignore
+.editorconfig
+.eslintignore
+.prettierignore

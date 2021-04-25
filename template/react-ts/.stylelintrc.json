@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-rational-order",
+        "stylelint-config-prettier"
+    ],
+    "plugins": ["stylelint-order"],
+    "rules": {
+        "indentation": 4
+    },
+    "ignoreFiles": ["**/*.ts", "**/*.tsx"]
+}
