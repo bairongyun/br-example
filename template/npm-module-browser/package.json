@@ -36,7 +36,7 @@
         "babel-plugin-import": "^1.12.1",
         "cross-env": "^7.0.2",
         "father-build": "^1.7.0",
-        "husky": "^2.3.0",
+        "husky": "^6.0.0",
         "jest": "^25.2.2",
         "lint-staged": "^9.4.2",
         "prettier": "^2.1.2",
@@ -46,8 +46,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged",
-            "pre-push": "npm run test"
+            "pre-commit": "pretty-quick --staged"
         }
     },
     "lint-staged": {
