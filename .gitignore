@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.vscode
+.project
+
+##
+node_modules/
+
+##
+logs/*
+
+##
+dist/
