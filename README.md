@@ -15,3 +15,5 @@ $ npm init br-cli test-template my-app-h5
 ### 模板列表
 
 -   test-template, 测试用（忽略）
+
+## 常见问题

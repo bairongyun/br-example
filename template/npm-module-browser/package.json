@@ -1,0 +1,82 @@
+{
+    "name": "br-module-name",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./lib/index.js",
+    "unpkg": "./dist/index.js",
+    "module": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "sideEffects": false,
+    "scripts": {
+        "build": "father-build",
+        "prepublishOnly": "npm run lint && npm run test && npm run build",
+        "lint": "npm run lint:js && npm run lint:prettier",
+        "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
+        "lint:fix": "npm run lint:js -- --fix",
+        "lint:prettier": "prettier -c ./src/**/*",
+        "prettier": "prettier --write ./src/**/*",
+        "test": "cross-env NODE_ENV=test jest",
+        "up": "npm run up:patch",
+        "up:patch": "npm version patch --no-git-tag",
+        "up:minor": "npm version minor --no-git-tag",
+        "up:major": "npm version major --no-git-tag"
+    },
+    "files": [
+        "dist",
+        "es",
+        "lib"
+    ],
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@bairong/fabric": "^1.1.18",
+        "@types/jest": "^25.1.4",
+        "@types/lodash": "^4.14.129",
+        "@types/vfile-message": "1.x",
+        "babel-plugin-import": "^1.12.1",
+        "cross-env": "^7.0.2",
+        "father-build": "^1.7.0",
+        "husky": "^2.3.0",
+        "jest": "^25.2.2",
+        "lint-staged": "^9.4.2",
+        "prettier": "^2.1.2",
+        "rimraf": "^3.0.0",
+        "ts-jest": "^25.2.1",
+        "typescript": "^3.4.5"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "pre-push": "npm run test"
+        }
+    },
+    "lint-staged": {
+        "**/*.{js,ts,json,css,md}": [
+            "prettier -w"
+        ],
+        "**/*.{js,ts}": [
+            "npm run lint:fix"
+        ]
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "ts"
+        ],
+        "testMatch": [
+            "<rootDir>/src/**/__tests__/**/*.test.ts"
+        ],
+        "testPathIgnorePatterns": [
+            "/node_modules/",
+            "/fixtures/"
+        ],
+        "transform": {
+            "^.+\\.ts$": "<rootDir>/node_modules/ts-jest"
+        },
+        "coveragePathIgnorePatterns": [
+            "/node_modules/",
+            "/__tests__/",
+            "/dist/"
+        ]
+    }
+}

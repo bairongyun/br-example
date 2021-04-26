@@ -1,0 +1,12 @@
+.idea/
+test/
+template/
+
+#
+.prettierrc
+.prettierrc.js
+
+# 日志文件等
+package-lock.json
+yarn.lock
+yarn-error.log
