@@ -30,4 +30,4 @@ const templateMap = {
     descripition: "react-ui-components",
   },
 };
-return templateMap;
+module.exports = templateMap;
