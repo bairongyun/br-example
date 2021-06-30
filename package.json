@@ -2,19 +2,21 @@
     "name": "br-example",
     "version": "1.0.0",
     "description": "百融云-fed-模板",
-    "main": "index.js",
     "scripts": {
         "up": "npm version patch --no-git-tag"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/bairongyun/br-example.git"
+        "url": "https://github.com/bairongyun/br-example.git"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "dezhao.chen",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/bairongyun/br-example/issues"
     },
-    "homepage": "https://github.com/bairongyun/br-example#readme"
+    "homepage": "https://github.com/bairongyun/br-example#readme",
+    "files": [
+        "template"
+    ]
 }
