@@ -1,0 +1,20 @@
+{
+    "name": "br-example",
+    "version": "1.0.0",
+    "description": "百融云-fed-模板",
+    "main": "index.js",
+    "scripts": {
+        "up": "npm version patch --no-git-tag"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bairongyun/br-example.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bairongyun/br-example/issues"
+    },
+    "homepage": "https://github.com/bairongyun/br-example#readme"
+}
