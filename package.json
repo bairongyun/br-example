@@ -1,6 +1,6 @@
 {
     "name": "br-example",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "百融云-fed-模板",
     "scripts": {
         "up": "npm version patch --no-git-tag"
