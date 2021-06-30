@@ -21,29 +21,34 @@
     ],
     "templateList": [
         {
-            "name": "node-server-egg",
-            "path": "https://github.com/bairongyun/br-example/tree/main/template/node-server-egg",
-            "descripition": "node端模板"
-        },
-        {
-            "name": "npm-module-browser",
-            "path": "https://github.com/bairongyun/br-example/tree/main/template/npm-module-browser",
-            "descripition": "npm模块"
+            "name": "react",
+            "path": "https://github.com/bairongyun/br-example/tree/main/template/react",
+            "description": "React web工程(参考create-react-app)"
         },
         {
             "name": "react-ts",
             "path": "https://github.com/bairongyun/br-example/tree/main/template/react-ts",
-            "descripition": "react-ts"
-        },
-        {
-            "name": "react-ui-components-ts",
-            "path": "https://github.com/bairongyun/br-example/tree/main/template/react-ui-components-ts",
-            "descripition": "react-ui-components-ts"
+            "description": "React + TypeScript web工程"
         },
         {
             "name": "react-ui-components",
             "path": "https://github.com/bairongyun/br-example/tree/main/template/react-ui-components",
-            "descripition": "react-ui-components"
+            "description": "React UI组件"
+        },
+        {
+            "name": "react-ui-components-ts",
+            "path": "https://github.com/bairongyun/br-example/tree/main/template/react-ui-components-ts",
+            "description": "React UI组件（React + TypeScript）"
+        },
+        {
+            "name": "node-server-egg",
+            "path": "https://github.com/bairongyun/br-example/tree/main/template/node-server-egg",
+            "description": "Nodejs构建Server(egg + pm2)"
+        },
+        {
+            "name": "npm-module-browser",
+            "path": "https://github.com/bairongyun/br-example/tree/main/template/npm-module-browser",
+            "description": "独立发布的npm包(浏览器版, 支持ES7语法)"
         }
     ]
 }
