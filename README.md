@@ -5,11 +5,11 @@
 ### 使用方式
 
 -   配合 br-cli 使用
--   `npm init br-cli <template-name> <my-project-name>`
+-   `npm init br-cli@latest <template-name> <my-project-name>`
 
 ```sh
-# 例子
-$ npm init br-cli test-template my-app-h5
+# 例子 ,一定概要添加@latest 使用最新版本，否则会用到旧版而报错
+$ npm init br-cli@latest test-template my-app-h5
 ```
 
 ## 模板列表
