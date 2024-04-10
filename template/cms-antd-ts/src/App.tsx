@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import locale from 'antd/es/locale/zh_CN';
 import Login from '@/pages/login/'
@@ -13,6 +13,7 @@ const App: React.FC = () => {
     <ConfigProvider locale={locale}>
       <BrowserRouter>
         <Switch>
+          <Route exact path='/' render={() => <Redirect to='/page/index' />} />
           <Route path='/page' component={Pages} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/error' component={PageError} />
