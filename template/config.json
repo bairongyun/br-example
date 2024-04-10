@@ -23,5 +23,10 @@
         "name": "npm-module-browser",
         "path": "https://github.com/bairongyun/br-example/tree/main/template/npm-module-browser",
         "description": "独立发布的npm包(浏览器版, 支持ES7语法)"
+    },
+    "cms-antd-ts": {
+        "name": "npm-module-browser",
+        "path": "https://github.com/bairongyun/br-example/tree/main/template/cms-antd-ts",
+        "description": "内容管理系统(CMS), antd + TypeScript"
     }
 }

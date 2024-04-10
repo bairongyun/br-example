@@ -16,6 +16,8 @@ $ npm init br-cli@latest react-ts my-react-app
 
 ```sh
 $ br-cli list
+//或
+$ npm view br-example --json //查看 templateList 字段
 ```
 
 ## 常见问题
