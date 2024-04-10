@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite --mode development",
     "lint": "eslint -c ./.eslintrc.js  --ext .js,.jsx,.ts,.tsx  ./",
-    "build:daily": "yarn --registry=https://registry.shurongdai.cn/ --force && vite build --mode daily",
-    "build:pro": "yarn --registry=https://registry.shurongdai.cn/ --force && vite build --mode production"
+    "build:daily": "vite build --mode daily",
+    "build:pro": "vite build --mode production"
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.3",
